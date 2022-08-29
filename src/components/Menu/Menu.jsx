@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
+import Footer from "../Footer/Footer";
 import S from "./Menu.module.css";
 
 const Menu = () => {
@@ -17,6 +18,7 @@ const Menu = () => {
           <Button texto="Clientes" />
         </Link>
       </nav>
+      <Footer/>
     </div>
   );
 };

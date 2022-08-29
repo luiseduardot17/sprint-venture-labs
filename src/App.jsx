@@ -1,15 +1,21 @@
-import './App.css'
-import Form from './components/Form/Form'
-import Menu from './components/Menu/Menu'
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Menu from "./components/Menu/Menu";
+import Home from "./Pages/Home/Home";
+import Cadastrar from "./pages/Cadastrar/Cadastrar";
+import Clientes from "./pages/Clientes/Clientes";
 
 function App() {
-  
   return (
-    <div className="App">
-      <Menu/>
-      <Form/>
-    </div>
-  )
+    <BrowserRouter>
+      <Menu />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/+Cadastrar" element={<Cadastrar />} />
+        <Route path="/Clientes" element={<Clientes />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

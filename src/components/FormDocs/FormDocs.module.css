@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 50px;
+    height: 50vh;
+    padding: 20px;
+    background-color: #efefef;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #000000;
+    
+  }
+  
+  .label {
+    text-align: left;
+  }
+  
+  .input {
+    top: 441px;
+    left: 870px;
+    width: 340px;
+    height: 30px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+  }
+  

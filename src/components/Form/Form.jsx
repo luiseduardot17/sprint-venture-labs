@@ -17,10 +17,10 @@ const Form = () => {
           E-mail:
         </label>
         <input type="email" id="email" name="email" className={S.input}></input>
-        <label htmlFor="phone" className={S.label}>
+        <label htmlFor="tel" className={S.label}>
           Telefone:
         </label>
-        <input type="text" id="phone" name="phone" className={S.input}></input>
+        <input type="tel" id="tel" name="tel" className={S.input}></input>
         </form>
       
     </div>

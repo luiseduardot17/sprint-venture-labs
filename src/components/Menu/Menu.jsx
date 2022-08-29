@@ -11,7 +11,7 @@ const Menu = () => {
           <Button texto="Home" />
         </Link>
         <Link className={S.nav} to="/Cadastrar">
-          <Button texto="+Cadastrar" />
+          <Button texto="Cadastrar" />
         </Link>
         <Link className={S.nav} to="/Clientes">
           <Button texto="Clientes" />

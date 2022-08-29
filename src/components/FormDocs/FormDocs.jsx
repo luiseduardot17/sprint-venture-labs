@@ -1,4 +1,5 @@
 import React from 'react'
+import S from './FormDocs.module.css'
 
 const FormDocs = () => {
   return (

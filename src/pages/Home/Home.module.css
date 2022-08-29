@@ -2,5 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(180deg,#000000 0%,#010d38 100%);
+  width: 100%;
+}
+
+.container > img {
+  width: 50%;
 }

@@ -1,13 +1,19 @@
-import React from 'react'
-import Form from '../../components/Form/Form'
-import S from './Cadastrar.module.css'
+import React, { useContext } from "react";
+import Form from "../../components/Form/Form";
+import { CadastroContext } from "../../context/CadastroProvider";
+import S from "./Cadastrar.module.css";
 
 const Cadastrar = () => {
+
+  const {infos, handleChange, handleClick} = useContext(CadastroContext)
+  
   return (
     <div className={S.container}>
-      <Form/>
-    </div>
-  )
-}
+      <h2>Venha fazer parte do ecossistema tech</h2>
 
-export default Cadastrar
+      <Form infos={infos} handleChange={handleChange} handleClick={handleClick}/>
+    </div>
+  );
+};
+
+export default Cadastrar;

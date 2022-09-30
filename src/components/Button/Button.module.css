@@ -10,12 +10,13 @@
     height: 40px;
     color: #ffffff;
     text-align: center;
-    font-family: "Dosis", sans-serif;
+    font-family: "Archivo", sans-serif;
     background-image: linear-gradient(to bottom, #8618df 0%, #3fe5f1 100%);
     background-clip: padding-box;
     border-radius: 5px;
     font-size: 20px;
     border: 0;
+    cursor: pointer;
 }
 
 .button:hover {

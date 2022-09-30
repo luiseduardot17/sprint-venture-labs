@@ -4,12 +4,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 100px;
+  gap: 50px;
 }
 
-.container > h2 {
-  color: #ffffff;
-  font-size: 3em;
-  align-self: start;
+.container h2 {
+  color: #f2f2f2;
+  font-size: 50px;
   padding-left: 50px;
+}
+
+.container p {
+  font-size: 40px;
+  color: #f2f2f2;
 }

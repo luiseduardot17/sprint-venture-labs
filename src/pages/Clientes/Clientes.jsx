@@ -10,7 +10,22 @@ const Clientes = () => {
     <div className={S.containerClientes}>
       <div className={S.container}>
         <h2>Conheça nossos clientes</h2>
-        <FichaCliente BancoDeDados={BancoDeDados}/>
+        {BancoDeDados.length > 0 ? BancoDeDados.map((BancoDeDados, index) => (
+          <FichaCliente
+          key={index} 
+          nome={BancoDeDados.nome}
+          sobrenome={BancoDeDados.sobrenome}
+          email={BancoDeDados.email}
+          telefone={BancoDeDados.telefone}
+          cep={BancoDeDados.cep}
+          endereço1={BancoDeDados.endereço1}
+          endereço2={BancoDeDados.endereço2}
+          nascimento={BancoDeDados.nascimento}
+          cpf={BancoDeDados.cpf}
+          renda={BancoDeDados.renda}
+          />
+        ))
+        : <p>No momento não existem clientes para mostrar 😕</p>}
       </div>
     </div>
   );

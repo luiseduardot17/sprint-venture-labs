@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import Alert from "../components/Alert/Alert";
 
 export const CadastroContext = createContext();
 
@@ -17,14 +18,19 @@ const CadastroProvider = ({ children }) => {
   });
 
   const [BancoDeDados, setBancoDeDados] = useState([]);
+  const [page, setPage] = useState(0)
 
   function handleChange(e, chave) {
     setInfos({ ...infos, [chave]: e.target.value });
   }
 
+  function nextPage(e) {
+    e.preventDefault()
+    setPage(page + 1)
+  }
+
   function handleClick(e) {
     e.preventDefault();
-    console.log(infos);
     setBancoDeDados([...BancoDeDados, infos]);
 
     setInfos({
@@ -39,17 +45,19 @@ const CadastroProvider = ({ children }) => {
       cpf: "",
       renda: "",
     });
+    setPage(0)
   }
-
-  console.log(BancoDeDados);
 
 
   const contexto = {
     infos: infos,
     BancoDeDados: BancoDeDados,
+    page: page,
+    nextPage: nextPage,
     handleChange: handleChange,
-    handleClick: handleClick
-  }
+    handleClick: handleClick,
+  };
+  
   return (
     <CadastroContext.Provider value={contexto}>
         {children}

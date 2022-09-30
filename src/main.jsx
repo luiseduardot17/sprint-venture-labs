@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import Routes from "./Routes";
 import CadastroProvider from "./context/CadastroProvider";
-import "./index.css";
+import "./styles/reset.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <CadastroProvider>
-      <App />
+      <Routes />
     </CadastroProvider>
   </React.StrictMode>
 );

@@ -1,9 +1,10 @@
-# <spam style="color: blue">Venture Labs</spam>
+# ⚡<spam style="color: blue">Venture Labs</spam>
 
 Sprint do módulo 5 da Resilia Educação, com objetivo de desenvolver uma aplicação utilizando React.js.<br>
 
-## 📷 Imagem da aplicação:
+## 📷 Print da aplicação:
 
+![image](https://user-images.githubusercontent.com/102761201/193357246-4667ef54-4455-4037-b96b-35c67485474a.png)
 
 ## 🔼 Link do deploy do Vercel:
 ```

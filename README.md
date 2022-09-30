@@ -7,7 +7,7 @@ Sprint do módulo 5 da Resilia Educação, com objetivo de desenvolver uma aplic
 
 ## 🔼 Link do deploy do Vercel:
 ```
-https://sprint-venture-labs.vercel.app/
+https://sprint-venture-labs-weld.vercel.app/
 ```
 
 ## 🎯 Baseado no desafio do processo seletivo da vaga de front da Venture Labs
